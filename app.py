@@ -51,7 +51,7 @@ from flask import (Flask,session, g, json, Blueprint,flash, jsonify, redirect, r
 from gensim.summarization import summarize
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 
 import pdf2txt as pdf
 import PyPDF2
